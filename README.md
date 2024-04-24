@@ -37,13 +37,13 @@ docker compose run halide
 
 - Volume / Shered folder:
   
-  The `container_volume` folder is loaded into the Docker container. Therefore, place your code/project in this folder to use it with Docker.
+  The `container_volume` folder from the `halide-docker` repository is loaded into the Docker container. Therefore, place your code/project in this folder to use it with Docker.
 
-  This folder in the container is mounted to the `/volume` directory.
+  In the container, this folder is mounted to the `/volume` directory and its files can be accessed through it.
 
 
 - Environment Variables:
 
-  On this container, the Halide folder is seted on `$HALIDE_ROOT` environment variable.
+  On this container, the Halide folder is set on `$HALIDE_ROOT` environment variable.
 
   The `$LD_LIBRARY_PATH` environment variable is already set too.
