@@ -11,11 +11,6 @@ Install docker and docker-compose on your OS. Follow the official docker instruc
   - [Linux Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
   - [Windows](https://docs.docker.com/desktop/install/windows-install/)
 
-- Install docker-compose: if `docker compose` is not a recognized command, install docker-compose:
-    ```bash
-    $ apt install docker-compose
-    ```
-
 ---
 
 **Execution:**
@@ -24,14 +19,18 @@ Install docker and docker-compose on your OS. Follow the official docker instruc
 
 ```bash
 $ docker compose up --build
-# or
-$ docker-compose up --build
 ```
 
 - To run the docker compose AFTER THE FIRST TIME use these commands
 
 ```bash
 $ docker compose run halide
-# or
-$ docker-compose run halide
 ```
+
+---
+
+**Using**
+
+The `container_volume` folder is loaded into the Docker container. Therefore, place your code/project in this folder to use it with Docker.
+
+This folder in the container is mounted to the `/volume` directory.
