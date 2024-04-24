@@ -20,20 +20,23 @@ _Into the folder of this repository:_
 - To run the docker compose FOR THE FIRST TIME use these commands
 
 ```bash
-$ docker compose up --build
+docker compose up --build
 ```
 
 - To run the docker compose AFTER THE FIRST TIME use these commands
 
 ```bash
-$ docker compose run halide
+docker compose run halide
 ```
+
+> If your user is not on _docker_ group, the super user permission (_sudo_) is necessary to run the above commands.
 
 ---
 
 **Using:**
 
 - Volume / Shered folder:
+  
   The `container_volume` folder is loaded into the Docker container. Therefore, place your code/project in this folder to use it with Docker.
 
   This folder in the container is mounted to the `/volume` directory.
