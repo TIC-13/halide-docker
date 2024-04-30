@@ -1,12 +1,14 @@
-version: '3'
-
 services:
   halide:
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./container_volume/:/volume
+      - type: bind
+        source: ./container_volume/
+        target: /volume
+        bind:
+          propagation: shared
     container_name: Halide
 
 
