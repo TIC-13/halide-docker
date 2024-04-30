@@ -26,7 +26,7 @@ docker compose up --build
 - To run the docker compose AFTER THE FIRST TIME use these commands
 
 ```bash
-docker compose run halide
+docker compose run --rm halide /bin/bash
 ```
 
 > If your user is not on _docker_ group, the super user permission (_sudo_) is necessary to run the above commands.
