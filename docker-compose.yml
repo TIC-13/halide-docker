@@ -14,9 +14,9 @@ services:
 
 #####################################################################
 # To run the docker compose FOR THE FIRST TIME use these commands
-#   docker-compose up --build
+#   docker compose up --build
 #
 # To run the docker compose AFTER THE FIRST TIME use these commands
-#   docker-compose run halide
+#   docker compose run halide
 #####################################################################
 
